@@ -1,0 +1,394 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Portfolio Single
+{% endblock %}
+
+{% block content %}
+<!-- Header Breadcrumbs-->
+<header class="breadcrumbs-type-1">
+    <div class="container breadcrumbs--breadcrumbs-inner">
+        <h1 class="breadcrumbs-inner--page-title">
+            Single Project
+        </h1>
+        <ul class="breadcrumbs-inner--breadcrumbs-list">
+            <li>
+                <a href="{% url 'home'%}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Single Project
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- Single Project 1 -->
+<section class="single-project small-section">
+    <div class="container">
+        <div class="single-project--overview">
+            <div class="overview--title">
+                <h2>Project Overview</h2>
+            </div>
+            <div class="overview--info-wrapper">
+                <div class="info-wrappper--info">
+                    <i class="fas fa-clock"></i>
+                    <p>Nov 16, 2019</p>
+                </div>
+                <div class="info-wrappper--info">
+                    <i class="fa fa-user"></i>
+                    <a href="index.html">KnightleyStudio</a>
+                </div>
+                <div class="info-wrappper--info">
+                    <i class="fas fa-tag"></i>
+                    <p><a href="index.html">Creative</a></p>
+                </div>
+                <div class="info-wrappper--info">
+                    <i class="fas fa-eye"></i>
+                    <p>55</p>
+                </div>
+            </div>
+        </div>
+        <div class="sinle-project--3-images-column small-section">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="images-columns--image-wrapper bg-position-center bg-size-cover" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="images-columns--image-wrapper bg-position-center bg-size-cover" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="images-columns--image-wrapper bg-position-center bg-size-cover mb-0" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                </div>
+            </div>
+        </div>
+        <div class="single-project--item-description">
+            <div class="container">
+                <div class="row item-description--project-information">
+                    <div class="col-md-3 project-information--info-wrapper"
+                         data-aos="fade-up"
+                         data-aos-anchor-placement="top-bottom"
+                         data-aos-easing="ease-in-out"
+                         data-aos-duration="800">
+                        <p class="info-wrapper--subtitle">Client: </p>
+                        <h6 class="info-wrapper--info-title"><a href="index.html">Maria Doe</a></h6>
+                    </div>
+                    <div class="col-md-3 project-information--info-wrapper"
+                         data-aos="fade-up"
+                         data-aos-delay="100"
+                         data-aos-anchor-placement="top-bottom"
+                         data-aos-easing="ease-in-out"
+                         data-aos-duration="800">
+                        <p class="info-wrapper--subtitle">Date: </p>
+                        <h6 class="info-wrapper--info-title">2020-02-20</h6>
+                    </div>
+                    <div class="col-md-3 project-information--info-wrapper"
+                         data-aos="fade-up"
+                         data-aos-delay="200"
+                         data-aos-anchor-placement="top-bottom"
+                         data-aos-easing="ease-in-out"
+                         data-aos-duration="800">
+                        <p class="info-wrapper--subtitle">Website: </p>
+                        <h6 class="info-wrapper--info-title"><a href="index.html">Example.com</a></h6>
+                    </div>
+                    <div class="col-md-3 project-information--info-wrapper"
+                         data-aos="fade-up"
+                         data-aos-delay="300"
+                         data-aos-anchor-placement="top-bottom"
+                         data-aos-easing="ease-in-out"
+                         data-aos-duration="800">
+                        <p class="info-wrapper--subtitle">Category: </p>
+                        <h6 class="info-wrapper--info-title"><a href="index.html">Inspiration</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background Slider-->
+        <div class="background-slider">
+            <div class="background-slider-type-1">
+                <div class="swiper-container swiper-background">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                        <div class="swiper-slide" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                        <div class="swiper-slide" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row single-project--inner-wrapper">
+            <div class="col-lg-4 inner-wrapper--column-wrapper"
+                 data-aos="fade-up"
+                 data-aos-delay="100"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="800">
+                <h6>Testing for Perfection</h6>
+                <p>Lorem ipsum dolor sit amet, consectet adipisicing elit. Adipisci aliquid beatae</p>
+            </div>
+            <div class="col-lg-4 inner-wrapper--column-wrapper"
+                 data-aos="fade-up"
+                 data-aos-delay="150"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="800">
+                <h6>Handcrafted Templates</h6>
+                <p>Lorem ipsum dolor sit amet, consectet adipisicing elit. Adipisci aliquid beatae</p>
+            </div>
+            <div class="col-lg-4 inner-wrapper--column-wrapper"
+                 data-aos="fade-up"
+                 data-aos-delay="200"
+                 data-aos-anchor-placement="top-bottom"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="800">
+                <h6>Discussion of the Idea</h6>
+                <p>Lorem ipsum dolor sit amet, consectet adipisicing elit. Adipisci aliquid beatae</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About item-->
+<section class="about-item-section">
+    <div class="container">
+        <div class="row about-item-section--inner-wrapper">
+            <div class="col-xl-6 inner-wrapper--image-wrapper bg-size-cover bg-position-center overlay" style="background-image: url('http://via.placeholder.com/1920x1280')">
+            </div>
+            <div class="col-xl-6 padding-left">
+                <div class="inner-wrapper--content">
+                    <h4>We are delivering beautiful digital products for you</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae cupiditate deleniti et expedita fugiat provident similique soluta tempora</p>
+                    <div class="button-wrapper">
+                        <a class="button btn-type-2" href="portfolio-single.html">About item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Quote -->
+<section class="parallax-item bg-size-cover bg-position-center overlay black-overlay" style="background-image: url('http://via.placeholder.com/1920x1280')">
+    <div class="blockquote-type-1">
+        <div class="container blockquote-wrapper">
+            <div class="row">
+                <div class="col blockquote-col">
+                    <blockquote>
+                        <h5>
+                            Taking an image, freezing a moment, reveals how rich reality actually is</h5>
+                        <div class="button-wrapper">
+                            <a class="button btn-type-1" href="blog-single.html">Learn More</a>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About item text -->
+<section class="about-item-text-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="inner-wrapper--content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto at atque commodi consequuntur culpa, cumque debitis delectus eaque earum enim esse expedita, facere id ipsam labore modi obcaecati officia officiis
+                        repellendus sunt tempore ullam voluptatem! Accusantium aperiam asperiores, consequatur consequuntur corporis.</p>
+                    <h4>Advertising works most effectively when it’s in line with what people are already trying to do</h4>
+                </div>
+                <div class="two-side-items">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 pl-0 two-side-items--wrapper"
+                                 data-aos="fade-up"
+                                 data-aos-delay="100"
+                                 data-aos-anchor-placement="top-bottom"
+                                 data-aos-easing="ease-in-out"
+                                 data-aos-duration="700">
+                                <div class="bg-position-center bg-size-cover image-wrapper first-image" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                            </div>
+                            <div class="col-lg-6 pr-0 two-side-items--wrapper"
+                                 data-aos="fade-up"
+                                 data-aos-delay="100"
+                                 data-aos-anchor-placement="top-bottom"
+                                 data-aos-easing="ease-in-out"
+                                 data-aos-duration="700">
+                                <div class="bg-position-center bg-size-cover image-wrapper second-image" style="background-image: url('http://via.placeholder.com/1920x1280')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet assumenda delectus dignissimos, doloribus esse, est et iste minus nesciunt placeat possimus provident quis quos recusandae, repudiandae sapiente
+                    sed
+                    tempora veritatis voluptas. Cumque cupiditate enim suscipit! Autem dolor, eligendi et facere impedit necessitatibus. Adipisci animi cupiditate explicabo harum minus modi molestiae quas quia quisquam sint sunt,
+                    temporibus
+                    totam ullam! Amet eveniet excepturi quia suscipit ut.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features -->
+<section class="services-section-portfolio">
+    <div class="container">
+        <div class="services-type-2">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-type-2--services-inner">
+                        <div class="services-inner--icon-wrapper">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="services-inner--content-wrapper">
+                            <h6 class="content-wrapper--service-title">Different Layout</h6>
+                            <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Consequatur iste sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-type-2--services-inner">
+                        <div class="services-inner--icon-wrapper">
+                            <i class="fab fa-uikit"></i>
+                        </div>
+                        <div class="services-inner--content-wrapper">
+                            <h6 class="content-wrapper--service-title">Portfolio Styles</h6>
+                            <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Consequatur iste sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-type-2--services-inner">
+                        <div class="services-inner--icon-wrapper">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="services-inner--content-wrapper">
+                            <h6 class="content-wrapper--service-title">Unique Design</h6>
+                            <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Consequatur iste sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-type-2--services-inner">
+                        <div class="services-inner--icon-wrapper">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="services-inner--content-wrapper">
+                            <h6 class="content-wrapper--service-title">Web Development</h6>
+                            <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Consequatur iste sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-type-2--services-inner">
+                        <div class="services-inner--icon-wrapper">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="services-inner--content-wrapper">
+                            <h6 class="content-wrapper--service-title">Web Development</h6>
+                            <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Consequatur iste sit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-type-2--services-inner">
+                        <div class="services-inner--icon-wrapper">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="services-inner--content-wrapper">
+                            <h6 class="content-wrapper--service-title">Web Development</h6>
+                            <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Consequatur iste sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Accordion gallery-->
+<section class="accordion-gallery-section">
+    <div class="accordion-gallery">
+        <div class="accordion-gallery--inner-wrapper">
+            <div class="inner-wrapper--items-wrapper">
+                <div class="items-wrapper--item">
+                    <div class="item--image-wrapper">
+                        <div class="image-wrapper--image-inner">
+                            <div class="image-inner--image">
+                                <div class="image--background"
+                                     style="background-image: url('http://via.placeholder.com/1920x1280')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-wrapper--item">
+                    <div class="item--image-wrapper">
+                        <div class="image-wrapper--image-inner">
+                            <div class="image-inner--image">
+                                <div class="image--background"
+                                     style="background-image: url('http://via.placeholder.com/1920x1280')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-wrapper--item">
+                    <div class="item--image-wrapper">
+                        <div class="image-wrapper--image-inner">
+                            <div class="image-inner--image">
+                                <div class="image--background"
+                                     style="background-image: url('http://via.placeholder.com/1920x1280')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-wrapper--item">
+                    <div class="item--image-wrapper">
+                        <div class="image-wrapper--image-inner">
+                            <div class="image-inner--image">
+                                <div class="image--background"
+                                     style="background-image: url('http://via.placeholder.com/1920x1280')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-wrapper--item">
+                    <div class="item--image-wrapper">
+                        <div class="image-wrapper--image-inner">
+                            <div class="image-inner--image">
+                                <div class="image--background"
+                                     style="background-image: url('http://via.placeholder.com/1920x1280')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-wrapper--item-sizer"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Navigation Project -->
+<section class="navigation-project">
+    <div class="container-fluid">
+        <div class="row navigation-project--nav-wrapper">
+            <div class="nav-wrapper--nav-link">
+                <a href="portfolio-single.html">
+                    <i class="fa fa-angle-left"></i>
+                    <span>Previous project</span>
+                </a>
+            </div>
+            <div class="nav-wrapper--nav-link main-link">
+                <a href="portfolio-single.html">
+                    <i class="fas fa-th"></i>
+                </a>
+            </div>
+            <div class="nav-wrapper--nav-link">
+                <a href="portfolio-single.html">
+                    <span>Next project</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+{% endblock %}

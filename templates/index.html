@@ -1,0 +1,1010 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+HnB
+{% endblock %}
+
+{% block style %}
+<style>
+    
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero-Header -->
+<header class="hero-header">
+    <div class="swiper-container swiper-hero">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('/static/images/s1.jpeg')">
+                <div class="hero-header--hero-content">
+                    <div class="container">
+                        <div class="hero-content--hero-wrapper">
+                            <div class="hero-wrapper--content">
+                                <h1 class="content--hero-heading">Harbor <br> N Bay</h1>
+                                <h1 class="content--back-title">Harbor<br>N Bay</h1>
+                                <p class="content--hero-subtitle">Your new wardrobe is waiting for you, drag and
+                                    drop to the cart
+                                    <br></p>
+                                <div class="button-wrapper">
+                                    <a href="{% url 'shop'%}" class="button btn-type-2">Shop Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="hero-wrapper--news">
+                            <div class="news--news-wrap">
+                                <div class="news-wrapper--news-column">
+                                    <div class="news-column--author">
+                                        <a href="blog-single.html"><h6>John Doe</h6></a>
+                                    </div>
+                                    <div class="news--news-description">
+                                        <a href="blog-single.html"><p>Never look down on anybody unless you're helping him
+                                            up.</p></a>
+                                    </div>
+                                </div>
+                                <div class="news-wrapper--news-column">
+                                    <div class="news-column--author">
+                                        <a href="blog-single.html"><h6>Maria Grey</h6></a>
+                                    </div>
+                                    <div class="news--news-description">
+                                        <a href="blog-single.html"><p>Everybody can be great. Because anybody can serve.</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/static/images/s2.jpeg')">
+                <div class="hero-header--hero-content">
+                    <div class="container">
+                        <div class="hero-content--hero-wrapper">
+                            <div class="hero-wrapper--content">
+                                <h1 class="content--hero-heading">Effortless Shopping
+                                </h1>
+                                <h1 class="content--back-title">Effortless<br>Shopping</h1>
+                                <p class="content--hero-subtitle">Clothes may not define everything about you
+                                    but they define enough. So pick your preferences wisely.</p>
+                                <div class="button-wrapper">
+                                    <a href="{% url 'shop'%}" class="button btn-type-2">Shop Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="hero-wrapper--news">
+                            <div class="news--news-wrap">
+                                <div class="news-wrapper--news-column">
+                                    <div class="news-column--author">
+                                        <a href="product-single.html"><h6>John Doe</h6></a>
+                                    </div>
+                                    <div class="news--news-description">
+                                        <a href="product-single.html"><p>The people who give you their food give you their
+                                            heart.</p></a>
+                                    </div>
+                                </div>
+                                <div class="news-wrapper--news-column">
+                                    <div class="news-column--author">
+                                        <a href="product-single.html"><h6>Maria Grey</h6></a>
+                                    </div>
+                                    <div class="news--news-description">
+                                        <a href="product-single.html"><p>You can have anything you want in life if you dress for
+                                            it.</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/static/images/s3.jpeg')">
+                <div class="hero-header--hero-content">
+                    <div class="container">
+                        <div class="hero-content--hero-wrapper">
+                            <div class="hero-wrapper--content">
+                                <h1 class="content--hero-heading">Trends and You</h1>
+                                <h1 class="content--back-title">Trends<br>and you</h1>
+                                <p class="content--hero-subtitle">Time to change your wardrobe</p>
+                                <div class="button-wrapper">
+                                    <a href="{% url 'shop'%}" class="button btn-type-2">Shop Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="hero-wrapper--news">
+                            <div class="news--news-wrap">
+                                <div class="news-wrapper--news-column">
+                                    <div class="news-column--author">
+                                        <a href="about.html"><h6>John Doe</h6></a>
+                                    </div>
+                                    <div class="news--news-description">
+                                        <a href="blog-single.html"><p>Styles come and go. Design is a language, not a
+                                            style.</p></a>
+                                    </div>
+                                </div>
+                                <div class="news-wrapper--news-column">
+                                    <div class="news-column--author">
+                                        <a href="blog-single.html"><h6>Maria Grey</h6></a>
+                                    </div>
+                                    <div class="news--news-description">
+                                        <a href="blog-single.html"><p>Alone we can do so little; together we can do so
+                                            much.</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev-default"><i class="fa fa-angle-left"></i></div>
+        <div class="swiper-button-next-default"><i class="fa fa-angle-right"></i></div>
+    </div>
+    <div class="hero-header--share-form">
+        <a href="blog-single.html">
+            <div class="share-form--share-icon">
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="share-form--share-info">
+                <p>Share</p>
+            </div>
+        </a>
+    </div>
+    <div class="hero-header--socials">
+        <div class="socials--wrapper">
+            <ul class="social-icons-type-1">
+                <li><a href="index.html" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="index.html" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="index.html" class="googlePlus"><i class="fab fa-google"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- Feature boxes-->
+<section class="large-section feature-boxes">
+    <div class="container">
+        <div class="row feature-box-type-1">
+            <div class="col-xl-4 rev-block animation-element">
+                <div class="feature-box-type-1--inner-wrapper">
+                    <div class="inner-wrapper--number">
+                        <p>01</p>
+                    </div>
+                    <div class="inner-wrapper--content-wrapper">
+                        <div class="content-wrapper--title">
+                            <h5>Effortless Shopping</h5>
+                        </div>
+                        <div class="content-wrapper--subtitle">
+                            <p>Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo
+                                similique! Impedit, provident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 rev-block animation-element second-animation">
+                <div class="feature-box-type-1--inner-wrapper">
+                    <div class="inner-wrapper--number">
+                        <p>02</p>
+                    </div>
+                    <div class="inner-wrapper--content-wrapper">
+                        <div class="content-wrapper--title">
+                            <h5>Trends and You</h5>
+                        </div>
+                        <div class="content-wrapper--subtitle">
+                            <p>Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo
+                                similique! Impedit, provident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 rev-block animation-element third-animation">
+                <div class="feature-box-type-1--inner-wrapper mb-0">
+                    <div class="inner-wrapper--number">
+                        <p>03</p>
+                    </div>
+                    <div class="inner-wrapper--content-wrapper">
+                        <div class="content-wrapper--title">
+                            <h5>
+                                Comfort and Style</h5>
+                        </div>
+                        <div class="content-wrapper--subtitle">
+                            <p>Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo
+                                similique! Impedit, provident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About us -->
+<section class="about-company large-section overlay dark-overlay bg-size-cover bg-position-center" style="background-image: url('https://wallpaperaccess.com/full/2489629.jpg')">
+    <div class="container z-index-100">
+        <div class="row about-company--inner-wrapper">
+            <div class="col-xl-4 col-md-6 image-wrapper">
+                <div class="image bg-size-cover bg-position-center"
+                     style="background-image: url('https://i.ebayimg.com/thumbs/images/g/MF8AAOSw2jRkEe5y/s-l1200.jpg')">
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 image-wrapper">
+                <div class="image bg-size-cover bg-position-center"
+                     style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sM6RcZpi6TlZEG4SfaGRPBffVqJRXxFSbflIuQxovaZsfmJOTG0hsiva1Sua9DNS1cA&usqp=CAU')">
+                </div>
+            </div>
+            <div class="col-xl-4 section-heading padding-left">
+                <h2 class="section-heading--title">
+                   Trendy & Stylish
+
+                </h2>
+                <p class="section-heading--subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad dolorem earumun
+                </p>
+                <div class="button-wrapper">
+                    <a class="button btn-type-2" href="about.html">Core features</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Accordions -->
+<section class="accordions-section large-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="accordions-section--image-wrapper bg-size-cover bg-position-center"
+                     style="background-image: url('/static/images/img1.jpeg')">
+                    <div class="accordions-type-1 accordion-wrapper">
+                        <div class="accordion-wrapper--inner-wrapper">
+                            <div class="inner-wrapper--body-wrapper">
+                                <ul class="body-wrapper--content-list">
+                                    <li class="content-list--accordion active-accordion">
+                                        <p class="accordion--title">
+                                            Shooting & Retush
+                                            <i class="fa fa-angle-right title--icon"></i>
+                                        </p>
+                                        <div class="accordion--content">
+                                            <div class="content--inner-wrapper">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Asperiores consequatur cumque dolores dolor</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content-list--accordion">
+                                        <p class="accordion--title">
+                                            Story & Concept
+                                            <i class="fa fa-angle-right title--icon"></i>
+                                        </p>
+                                        <div class="accordion--content">
+                                            <div class="content--inner-wrapper">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Asperiores consequatur cumque dolores dolor</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="content-list--accordion">
+                                        <p class="accordion--title">
+                                            Style & Makeup
+                                            <i class="fa fa-angle-right title--icon"></i>
+                                        </p>
+                                        <div class="accordion--content">
+                                            <div class="content--inner-wrapper">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Asperiores consequatur cumque dolores dolor</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- 4 columns section testimonials-->
+<section class="four-columns-section">
+    <div class="one-column image-wrapper bg-size-cover bg-position-center"
+         style="background-image: url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFzaGlvbiUyMHRyZW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80')"></div>
+    <div class="one-column testimonials-slider-type-1">
+        <div class="swiper-container swiper-testimonials">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonials-slider-wrapper">
+                        <div class="testimonials-slider-wrapper--head">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, dolor dolore expedita ipsa laudantium perferendis repell"</p></div>
+                        <div class="testimonials-slider-wrapper--body">
+                            <div class="body--testimonial-img">
+                                <img src="https://media.gq.com/photos/5a516a145fcfbf58a755ba59/16:9/pass/180106_LFWMFW18-19_DR12-6368.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="body--testimonial-info">
+                                <div class="testimonial-info--name">
+                                    <h6>Alex Doe</h6>
+                                </div>
+                                <div class="testimonial-info--position">
+                                    <p>Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-slider-wrapper">
+                        <div class="testimonials-slider-wrapper--head">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, dolor dolore expedita ipsa laudantium perferendis repell"</p></div>
+
+                        <div class="testimonials-slider-wrapper--body">
+                            <div class="body--testimonial-img">
+                                <img src="https://media.gq.com/photos/5a516a145fcfbf58a755ba59/16:9/pass/180106_LFWMFW18-19_DR12-6368.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="body--testimonial-info">
+                                <div class="testimonial-info--name">
+                                    <h6>Sarah Smith</h6>
+                                </div>
+                                <div class="testimonial-info--position">
+                                    <p>Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-slider-wrapper">
+                        <div class="testimonials-slider-wrapper--head">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dicta, dolor dolore expedita ipsa laudantium perferendis repell"</p>
+                        </div>
+                        <div class="testimonials-slider-wrapper--body">
+                            <div class="body--testimonial-img">
+                                <img src="https://media.gq.com/photos/5a516a145fcfbf58a755ba59/16:9/pass/180106_LFWMFW18-19_DR12-6368.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="body--testimonial-info">
+                                <div class="testimonial-info--name">
+                                    <h6>John Crane</h6>
+                                </div>
+                                <div class="testimonial-info--position">
+                                    <p>Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one-column image-wrapper bg-size-cover bg-position-center"
+         style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHbzEOp1g_Sf4Ft-bb3Ck_EPhBsA8G265oPDKt8emrpIC0zj5VB846O7FCuRw6YNMKKA&usqp=CAU')"></div>
+    <div class="one-column counter">
+        <div class="counter--wrapper">
+            <div class="wrapper--number">
+                <p>96</p>
+            </div>
+            <div class="wrapper--description">
+                <p>projects</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services -->
+<section class="services-section large-section">
+    <div class="container">
+        <div class="row services-section--services-wrapper">
+            <div class="col-xl-4 col-md-6">
+                <div class="services-type-1">
+                    <div class="services-type-1--inner-wrapper tilt-wrapper"
+                         data-tilt-value="8" data-tilt-speed="1000"
+                         data-tilt-scale="1" data-tilt-perspective="800">
+                        <div class="inner-wrapper--icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="inner-wrapper--title">
+                            <h6>Web Interactive</h6>
+                        </div>
+                        <div class="inner-wrapper--subtitle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut odit temporibus
+                                vero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="services-type-1 mb-0">
+                    <div class="services-type-1--inner-wrapper tilt-wrapper"
+                         data-tilt-value="8" data-tilt-speed="1000"
+                         data-tilt-scale="1" data-tilt-perspective="800">
+                        <div class="inner-wrapper--icon">
+                            <i class="fas fa-broadcast-tower"></i>
+                        </div>
+                        <div class="inner-wrapper--title">
+                            <h6>Social Marketing</h6>
+                        </div>
+                        <div class="inner-wrapper--subtitle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut odit temporibus
+                                vero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 heading-wrapper padding-left">
+                <h5 class="heading-wrapper--heading white-color">
+                    Pixel perfect design and clear code delivered to you
+                </h5>
+                <p class="heading-wrapper--subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing el abb accusamus delectus
+                </p>
+                <div class="button-wrapper">
+                    <a class="button btn-type-1" href="about.html">About features<i
+                            class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team section -->
+<section class="team-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="swiper-container swiper-team-type-1 team-slider-type-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="member-wrapper">
+                                <div class="member-wrapper--img-wrapper">
+                                    <img src="{% static 'images/img18.jpeg'%}" alt="" class="img-fluid">
+                                </div>
+                                <div class="member-wrapper--member-description">
+                                    <div class="member-description--content-wrapper">
+                                        <div class="content-wrapper--socials">
+                                            <ul class="social-icons-type-2">
+                                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-wrapper--content">
+                                            <div class="content--author-wrapper">
+                                                <p class="content--position">Developer</p>
+                                                <h5 class="content--name">Anastasia Doe</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member-wrapper">
+                                <div class="member-wrapper--img-wrapper">
+                                    <img src="{% static 'images/img21.jpeg'%}" alt="" class="img-fluid">
+                                </div>
+                                <div class="member-wrapper--member-description">
+                                    <div class="member-description--content-wrapper">
+                                        <div class="content-wrapper--socials">
+                                            <ul class="social-icons-type-2">
+                                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-wrapper--content">
+                                            <div class="content--author-wrapper">
+                                                <p class="content--position">Manager</p>
+                                                <h5 class="content--name">Kate Li</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member-wrapper">
+                                <div class="member-wrapper--img-wrapper">
+                                    <img src="{% static 'images/img19.jpeg'%}" alt="" class="img-fluid">
+                                </div>
+                                <div class="member-wrapper--member-description">
+                                    <div class="member-description--content-wrapper">
+                                        <div class="content-wrapper--socials">
+                                            <ul class="social-icons-type-2">
+                                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-wrapper--content">
+                                            <div class="content--author-wrapper">
+                                                <p class="content--position">Designer</p>
+                                                <h5 class="content--name">Alex Mercer</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member-wrapper">
+                                <div class="member-wrapper--img-wrapper">
+                                    <img src="{% static 'images/img22.jpeg'%}" alt="" class="img-fluid">
+                                </div>
+                                <div class="member-wrapper--member-description">
+                                    <div class="member-description--content-wrapper">
+                                        <div class="content-wrapper--socials">
+                                            <ul class="social-icons-type-2">
+                                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-wrapper--content">
+                                            <div class="content--author-wrapper">
+                                                <p class="content--position">Director</p>
+                                                <h5 class="content--name">Anastasia Doe</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="member-wrapper">
+                                <div class="member-wrapper--img-wrapper">
+                                    <img src="{% static 'images/img20.jpeg'%}" alt="" class="img-fluid">
+                                </div>
+                                <div class="member-wrapper--member-description">
+                                    <div class="member-description--content-wrapper">
+                                        <div class="content-wrapper--socials">
+                                            <ul class="social-icons-type-2">
+                                                <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-wrapper--content">
+                                            <div class="content--author-wrapper">
+                                                <p class="content--position">Developer</p>
+                                                <h5 class="content--name">Maria Doe</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Quote and Video Button -->
+<section class="large-section quote-section bg-position-center bg-attachment-fixed overlay dark-overlay bg-size-cover" style="background-image: url('https://c0.wallpaperflare.com/preview/466/143/666/43vng2afmq4d224kosn3hvr2ho.jpg')">
+    <div class="container">
+        <div class="row quote-inner-wrapper">
+            <div class="col-xl-6">
+                <div class="video-wrapper-type-1">
+                    <a class="video-toggle-type-1 video-popup"
+                       href="#video-post-1">
+                        <div class="play-btn-scale">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </a>
+                    <div id="video-post-1" class="white-popup-block mfp-hide mfp-fade">
+                        <div class="modal-video-box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OaVsCM0Zeio?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="quote-inner-wrapper--quote-wrapper">
+                    <div class="quote-wrapper--quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="quote-wrapper--title">
+                        <h4>
+                            The road to success and the road to failure are almost exactly the same
+                        </h4>
+                    </div>
+                    <div class="quote-wrapper--subtitle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis delectus dolores
+                            ducimus esse nam provident sapiente sed. Aliquid, architecto conseq cupiditate
+                            exercitationem, expedita explicabo nam odio quaerat
+                            quis saepe.</p>
+                    </div>
+                    <div class="quote-wrapper--signature">
+                        <img src="{% static 'images/img11.jpeg'%}" alt="" class="img-fluid">
+                    </div>
+                    <div class="quote-wrapper--author">
+                        <a href="portfolio-single.html"><h6>Mark Doe</h6></a>
+                        <p class="author--position">IT Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio Items Slider -->
+<section class="large-section portfolio-section">
+    <div class="container">
+        <div class="row portfolio-section--wrapper">
+            <div class="col-xl-3 section-heading padding-right">
+                <h2 class="section-heading--title">
+                    New Projects
+                </h2>
+                <p class="section-heading--subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                </p>
+                <div class="button-wrapper">
+                    <a class="button btn-type-2" href="portfolio.html">View items</a>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="portfolio-slider">
+                    <div class="swiper-container portfolio-swiper-type-1 portfolio-slider-type-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tilt-wrapper portfolio-item"
+                                     data-tilt-value="10" data-tilt-speed="2000"
+                                     data-tilt-scale="1" data-tilt-perspective="1200"
+                                     style="background-image: url('/static/images/img25.jpeg')">
+                                    <div class="portfolio-item--content-wrapper">
+                                        <div class="content-wrapper--box-tilt">
+                                            <h4 class="box-tilt--title">Perfume mockup</h4>
+                                            <p class="box-tilt--tag">creative <span>/</span> art</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tilt-wrapper portfolio-item"
+                                     data-tilt-value="10" data-tilt-speed="2000"
+                                     data-tilt-scale="1" data-tilt-perspective="1200"
+                                     style="background-image: url('/static/images/img3.jpeg')">
+                                    <div class="portfolio-item--content-wrapper">
+                                        <div class="content-wrapper--box-tilt">
+                                            <h4 class="box-tilt--title">Bottle mockup</h4>
+                                            <p class="box-tilt--tag">digital <span>/</span> modern</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tilt-wrapper portfolio-item"
+                                     data-tilt-value="10" data-tilt-speed="2000"
+                                     data-tilt-scale="1" data-tilt-perspective="1200"
+                                     style="background-image: url('/static/images/img26.jpeg')">
+                                    <div class="portfolio-item--content-wrapper">
+                                        <div class="content-wrapper--box-tilt">
+                                            <h4 class="box-tilt--title">Cream mockup</h4>
+                                            <p class="box-tilt--tag">tech <span>/</span> website</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tilt-wrapper portfolio-item"
+                                     data-tilt-value="10" data-tilt-speed="2000"
+                                     data-tilt-scale="1" data-tilt-perspective="1200"
+                                     style="background-image: url('/static/images/img5.jpeg')">
+                                    <div class="portfolio-item--content-wrapper">
+                                        <div class="content-wrapper--box-tilt">
+                                            <h4 class="box-tilt--title">Bottle mockup</h4>
+                                            <p class="box-tilt--tag">site <span>/</span> blog</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev-item"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="swiper-button-next-item"><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portfolio 4 columns-->
+<section class="portfolio-metro portfolio-metro-section">
+    <div class="container">
+        <div class="buttons-sort">
+            <p class="buttons-sort--button active-button" data-filter="*">All</p>
+            <p class="buttons-sort--button" data-filter=".web">Web</p>
+            <p class="buttons-sort--button" data-filter=".business">Business</p>
+            <p class="buttons-sort--button" data-filter=".design">Design</p>
+            <p class="buttons-sort--button" data-filter=".art">Art</p>
+        </div>
+    </div>
+    <div class="four-column-container">
+        <div class="grid" data-grid-layout-mode="packery" data-grid-transition="0.7" data-grid-stagger="120">
+            <div class="grid--grid-item grid--grid-item-25 design web">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img6.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Heath</p>
+                            <h5 class="content--name">Fruits</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 business">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img7.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Nature</p>
+                            <h5 class="content--name">Plant</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 design art">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img8.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Creation</p>
+                            <h5 class="content--name">Cactus</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 business web">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img9.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Fruit</p>
+                            <h5 class="content--name">Pineapple</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 design web">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img14.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Green</p>
+                            <h5 class="content--name">Flowers</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 design web business art">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img15.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Inspiration</p>
+                            <h5 class="content--name">Art</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web art">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img16.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">Digital</p>
+                            <h5 class="content--name">Camera</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web business">
+                <div class="grid-item--grid-inner slide-animation">
+                    <img src="{% static 'images/img17.jpeg'%}" class="img-fluid" alt="">
+                    <a class="grid-inner--description-wrapper" href="portfolio.html">
+                        <div class="description-wrapper--content">
+                            <p class="content--tag">White</p>
+                            <h5 class="content--name">Plant</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Clients slider -->
+<section class="clients-slider">
+    <div class="container-fluid ">
+        <div class="row clients-slider--clients-wrapper">
+            <div class="col-xl-9 clients-slider-type-1 bg-position-center overlay dark-overlay bg-size-cover"
+                 style="background-image: url('http://via.placeholder.com/1920x1280')">
+                <div class="swiper-container clients-container-type-1">
+                    <div class="swiper-wrapper clients-container-type-1--clients-wrapper">
+                        <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="index.html" class="clients-slide--clients-inner">
+                                <img src="{% static 'images/img23.jpeg'%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="about.html" class="clients-slide--clients-inner">
+                                <img src="{% static 'images/img9.jpeg'%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="portfolio.html" class="clients-slide--clients-inner">
+                                <img src="{% static 'images/img24.jpeg'%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="product-single.html" class="clients-slide--clients-inner">
+                                <img src="{% static 'images/img12.jpeg'%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="shop.html" class="clients-slide--clients-inner">
+                                <img src="{% static 'images/img27.jpeg'%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="blog.html" class="clients-slide--clients-inner">
+                                <img src="{% static 'images/img6.jpeg'%}" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- <div class="swiper-slide clients-wrapper--clients-slide">
+                            <a href="blog-single.html" class="clients-slide--clients-inner">
+                                <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 section-heading padding-left">
+                <h2 class="section-heading--title">
+                    Our Partners
+                </h2>
+                <p class="section-heading--subtitle">
+                    Lorem ipsum dolor sit amet, consect adipisicing elit. Ad aliquid amet beat
+                </p>
+                <div class="button-wrapper">
+                    <a class="button btn-type-1" href="about.html">Learn More<i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Recent posts section -->
+<section class="recent-posts large-section">
+    <div class="container">
+        <div class="row recent-posts-section--posts-wrapper">
+            <div class="col-xl-3 section-heading padding-right">
+                <h2 class="section-heading--title">
+                    Blog Updated
+                </h2>
+                <p class="section-heading--subtitle">
+                    Lorem ipsum dolor sit amet consec adipisicing elit repel
+                </p>
+                <div class="button-wrapper">
+                    <a class="button btn-type-2" href="blog.html">Read blog</a>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="recent-posts-type-1">
+                    <div class="recent-posts-type-1--posts-wrapper first-post">
+                        <div class="posts-wrapper--post">
+                            <div class="post--image">
+                                <a href="blog.html">
+                                    <img src="{% static 'images/img31.jpeg'%}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post--content-wrapper">
+                                <div class="content-wrapper--date">
+                                    <div class="date--day heading-stroke">
+                                        <span>20</span>
+                                    </div>
+                                    <div class="date--month-year">
+                                        <p>Feb, 2020</p>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper--title">
+                                    <div class="title--tag">
+                                        <a href="blog.html"><p>Digital</p></a>
+                                    </div>
+                                    <a href="blog.html"><h5 class="title--main-title">Our websites are fluid, so our
+                                        work need to match</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts-type-1--posts-wrapper second-post">
+                        <div class="posts-wrapper--post">
+                            <div class="post--image">
+                                <a href="blog.html">
+                                    <img src="{% static 'images/img32.jpeg'%}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="post--content-wrapper">
+                                <div class="content-wrapper--date">
+                                    <div class="date--day heading-stroke">
+                                        <span>16</span>
+                                    </div>
+                                    <div class="date--month-year">
+                                        <p>Nov, 2020</p>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper--title">
+                                    <div class="title--tag">
+                                        <a href="blog.html"><p>Creative</p></a>
+                                    </div>
+                                    <a href="blog.html"><h5 class="title--main-title">Design is not just what it looks
+                                        like and feels like</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Contact form-->
+<section
+        class="contact-form-section large-section bg-size-cover bg-attachment-fixed bg-position-center overlay dark-overlay"
+        style="background-image: url('https://media.istockphoto.com/id/887360960/photo/mens-suits-on-hangers-in-different-colors.jpg?b=1&s=170667a&w=0&k=20&c=Y4R9o1OstKZ4oKfpbI3pIBM7kWyXVjx69_wZZCZKfug=')">
+    <div class="container ">
+        <div class="row contact-form-section--wrapper">
+            <div class="col-xl-4">
+                <div class="wrapper--subtitle">
+                    <p>We’d love to talk</p>
+                </div>
+                <div class="contact-form--title">
+                    <h2>We wil be in touch soon!</h2>
+                </div>
+                <div class="wrapper--description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing el. Aat corporis cumque ea eveniet
+                        ipsa numquam optio</p>
+                </div>
+                <div class="wrapper--socials">
+                    <div class="social-icons-type-2">
+                        <a href="index.html" class="social-box facebook-h">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="index.html" class="social-box linkedin-h">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="index.html" class="social-box twitter-h">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="index.html" class="social-box instagram-h">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="index.html" class="social-box google-plus-h">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 padding-left">
+                <div class="contact-form">
+                    <div class="contact-form--contact-form-wrapper" id="ajax-contact">
+                        <form class="contact-form-wrapper--contact-form">
+                            <div class="input-row">
+                                <div class="form-div first-div">
+                                    <input class="form-name" type="text" name="name" placeholder="Name*" required>
+                                </div>
+                                <div class="form-div last-div">
+                                    <input class="form-phone" type="text" name="phone" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="form-div">
+                                <input class="form-email" type="email" name="email" placeholder="Email*" required>
+                            </div>
+                            <div class="form-div">
+                                <textarea class="form-message" name="message" placeholder="Your message..."></textarea>
+                            </div>
+                            <div class="button-wrapper">
+                                <button type="submit" class="button btn-type-1">Send Message<i class="fas fa-phone"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+{% endblock %}

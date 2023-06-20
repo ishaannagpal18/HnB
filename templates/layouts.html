@@ -1,0 +1,336 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+<head>
+    <!-- HEAD START -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
+    <meta name="format-detection" content="telephone=no">
+    <title>{% block title%}
+
+        {% endblock %}</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %} ">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <!-- Magnific popup -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
+    <!-- Plur-->
+    <link rel="stylesheet" href="{% static 'css/plyr.min.css' %}">
+    <!-- AOS -->
+    <link rel="stylesheet" href="{% static 'css/aos.min.css' %}">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Jquery Ui-->
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- HEAD END -->
+    {% block style %}
+
+{% endblock %}
+</head>
+<body>
+
+
+<!-- PAGE START -->
+<main class="page-wrapper">
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <p class="animate">Harbor n Bay</p>
+    </div>
+    <!-- Cursor -->
+    <div class="cursor">
+        <div class="cursor--inner cursor--inner-circle"></div>
+        <div class="cursor--inner cursor--inner-text"></div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navigation-menu">
+        <!-- LOGO -->
+        <div class="inner-wrapper">
+            <div class="navigation-menu--logo-wrapper navigation-button">
+                <a href="{% url 'home'%}">
+                    <div class="logo-wrapper--image-wrapper">
+                        <img style="border:none" src="{% static 'images/hnb_logo.png'%}" alt="" class="img-fluid">
+                    </div>
+                </a>
+            </div>
+            <div class="right-side">
+                <div class="navigation-menu--sidebar-toggle navigation-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navigation-menu--shopping-cart-dropdown navigation-button">
+                    <div class="shopping-cart-dropdown--wrapper">
+                        <div class="wrapper--shop-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <p class="shop-icon--item-count">3</p>
+                            <div class="wrapper--dropdown-content">
+                                <ul>
+                                    <li>
+                                        <div class="image-wrapper">
+                                            <a href="{% url 'shop'%}">
+                                                <img src="http://via.placeholder.com/1920x1280" alt="prod-1" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="information-side">
+                                            <a href="{% url 'shop'%}"><h6 class="information-side--title">IHiegger Phone</h6></a>
+                                            <div class="information-side--price">
+                                                <p class="price--quantity">1 x</p>
+                                                <span>$49</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image-wrapper">
+                                            <a href="{% url 'shop'%}">
+                                                <img src="http://via.placeholder.com/1920x1280" alt="prod-1" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="information-side">
+                                            <a href="{% url 'shop'%}"><h6 class="information-side--title">Headphones</h6></a>
+                                            <div class="information-side--price">
+                                                <p class="price--quantity">2 x</p>
+                                                <span>$59</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image-wrapper">
+                                            <a href="{% url 'shop'%}">
+                                                <img src="http://via.placeholder.com/1920x1280" alt="prod-1" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="information-side">
+                                            <a href="{% url 'shop'%}"><h6 class="information-side--title">Brown Watch</h6></a>
+                                            <div class="information-side--price">
+                                                <p class="price--quantity">1 x</p>
+                                                <span>$69</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="button-wrapper">
+                                            <a href="{% url 'shop'%}" class="button btn-type-3">Checkout</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Toggle-->
+                <div class="navigation-menu--toggle-btn navigation-button">
+                    <div class="toggle-btn--menu">Menu</div>
+                    <div class="toggle-btn--wrapper-toggles">
+                        <div class="wrapper-toggles--one"></div>
+                        <div class="wrapper-toggles--two"></div>
+                        <div class="wrapper-toggles--three"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Menu-->
+        <div class="navigation-menu--inner-wrapper bg-size-cover bg-position-center bg-attachment-fixed overlay black-overlay" style="background-image: url('https://media.istockphoto.com/id/1293366109/photo/this-one-match-perfect-with-me.jpg?b=1&s=170667a&w=0&k=20&c=H5hgZid5Aji924X_NLc4t7zt1v5Qza_e33XI2VdgrlU=')">
+            <div class="inner-wrapper--menu-wrapper">
+                <ul class="menu-wrapper--menu-list active-window">
+                    <li class="menu-item"><a href="{% url 'home'%}">Home</a></li>
+                    <li class="menu-item"><a href="{% url 'about'%}">About</a></li>
+                    <li class="menu-item"><a href="{% url 'blog'%}">Blog</a></li>
+                    <li class="menu-item"><a href="{% url 'portfolio'%}">Portfolio</a></li>
+                    <li class="menu-item"><a href="{% url 'shop'%}">Shop</a></li>
+                    <!-- <li class="menu-item"><a href="rtl-index.html">RTL Version</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="navigation--sidebar-panel">
+            <div class="sidebar-panel-toggle-close">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="sidebar-panel--inner-wrapper">
+                <h5>Your cart is empty</h5>
+                <div class="button-wrapper">
+                    <a href="{% url 'shop'%}" class="button btn-type-2">Go Shopping</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="content-page-wrapper">
+        
+        {% block content %}
+
+    {% endblock %}
+        
+    <!-- Parallax Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-head">
+                <div class="col-xl-3 col-lg-6 col-sm-12">
+                    <div class="sidebar-widget">
+                        <h6 class="sidebar-widget--sidebar-title">Latest Posts</h6>
+                        <ul class="sidebar-widget--post-list">
+                            <li class="post-list--post">
+                                <a href="index.html">
+                                    <div class="post--img-wrapper">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    </div>
+                                </a>
+                                <div class="post--post-body">
+                                    <a href="index.html">
+                                        <h6>Good design is…</h6>
+                                    </a>
+                                    <div class="post-body--description-box">
+                                        <p class="description-box--date">June 12, 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="post-list--post">
+                                <a href="index.html">
+                                    <div class="post--img-wrapper">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    </div>
+                                </a>
+                                <div class="post--post-body">
+                                    <a href="index.html">
+                                        <h6>8 tips for your…</h6>
+                                    </a>
+                                    <div class="post-body--description-box">
+                                        <p class="description-box--date">May 28, 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="post-list--post">
+                                <a href="index.html">
+                                    <div class="post--img-wrapper">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    </div>
+                                </a>
+                                <div class="post--post-body">
+                                    <a href="index.html">
+                                        <h6>The great debate…</h6>
+                                    </a>
+                                    <div class="post-body--description-box">
+                                        <p class="description-box--date">Nov 16, 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-12">
+                    <div class="sidebar-widget">
+                        <h6 class="sidebar-widget--sidebar-title">Dribble Feed</h6>
+                        <div class="sidebar-widget--social-networks">
+                            <div class="social-networks--dribble-widget">
+                                <a href="https://dribbble.com/" class="gallery--image-item">
+                                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="https://dribbble.com/" class="gallery--image-item">
+                                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="https://dribbble.com/" class="gallery--image-item">
+                                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="https://dribbble.com/" class="gallery--image-item">
+                                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="https://dribbble.com/" class="gallery--image-item">
+                                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="https://dribbble.com/" class="gallery--image-item">
+                                    <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-12">
+                    <div class="sidebar-widget">
+                        <h6 class="sidebar-widget--sidebar-title">Contact Info</h6>
+                        <div class="sidebar-widget--contacts">
+                            <ul class="contacts--contact-info">
+                                <li><i class="fa fa-map-marker"></i>
+                                    <p>Factory, London, W2 5JU</p></li>
+                                <li><i class="fa fa-envelope"></i><a href="index.html">example@gmail.com</a></li>
+                                <li><i class="fa fa-phone"></i><a href="index.html">Phone: 1-123-222-567</a></li>
+                                <li><i class="fas fa-at"></i><a href="index.html">nastyakorbet@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-sm-12">
+                    <div class="sidebar-widget">
+                        <h6 class="sidebar-widget--sidebar-title">Tag Cloud</h6>
+                        <div class="sidebar-widget--tag-cloud">
+                            <a href="index.html" class="tag-cloud--tag">Solution</a>
+                            <a href="index.html" class="tag-cloud--tag">Design</a>
+                            <a href="index.html" class="tag-cloud--tag">Visual</a>
+                            <a href="index.html" class="tag-cloud--tag">Gallery</a>
+                            <a href="index.html" class="tag-cloud--tag">Scss</a>
+                            <a href="index.html" class="tag-cloud--tag">Creative</a>
+                            <a href="index.html" class="tag-cloud--tag">Famous</a>
+                            <a href="index.html" class="tag-cloud--tag">People</a>
+                            <a href="index.html" class="tag-cloud--tag">Food</a>
+                            <a href="index.html" class="tag-cloud--tag">Science</a>
+                            <a href="index.html" class="tag-cloud--tag">HTML</a> <a href="index.html"
+                                                                                    class="tag-cloud--tag">Photo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-body">
+            <div class="footer-body--wrapper">
+                <p>@ 2019 Norto is powered by <a href="https://themeforest.net/user/knightleystudio">KnightleyStudio</a></p>
+            </div>
+        </div>
+    </footer>
+</main>
+<!-- PAGE END -->
+
+<!-- INCLUDE SCRIPTS START -->
+
+<!--Jquery-->
+<script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+<!--TweenMax-->
+<script src="{% static 'js/TweenMax.min.js'%}"></script>
+<!-- ImageLoaded -->
+<script src="{% static 'js/imagesloaded.pkgd.min.js'%}"></script>
+<!-- Magnific Popup-->
+<script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+<!-- Isotope -->
+<script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+<!-- Plyr -->
+<script src="{% static 'js/plyr.min.js'%}"></script>
+<!-- Tilt -->
+<script src="{% static 'js/tilt.jquery.min.js'%}"></script>
+<!-- Sticky sidebar -->
+<script src="{% static 'js/sticky-sidebar.min.js'%}"></script>
+<!-- Packery -->
+<script src="{% static 'js/packery.pkgd.js'%}"></script>
+<!-- Waypoints -->
+<script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+<!-- AOS-->
+<script src="{% static 'js/aos.min.js'%}"></script>
+<!-- Swiper -->
+<script src="{% static 'js/swiper.min.js'%}"></script>
+<!-- Jquery Ui-->
+<script src="{% static 'js/jquery-ui.min.js'%}"></script>
+<!-- Main JS-file -->
+<script src="{% static 'js/main.js'%}"></script>
+<!-- INCLUDE SCRIPTS END -->
+
+</body>
+</html>

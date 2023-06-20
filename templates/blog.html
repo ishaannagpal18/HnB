@@ -1,0 +1,396 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Blogs
+{% endblock %}
+
+{% block content %}
+<header class="breadcrumbs-type-1">
+    <div class="container breadcrumbs--breadcrumbs-inner">
+        <h1 class="breadcrumbs-inner--page-title">
+            Blog
+        </h1>
+        <ul class="breadcrumbs-inner--breadcrumbs-list">
+            <li>
+                <a href="{% url 'home'%}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Blog
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- Blog Metro -->
+<section class="blog-metro">
+    <div class="container">
+        <div class="buttons-sort">
+            <p class="buttons-sort--button active-button" data-filter="*">All</p>
+            <p class="buttons-sort--button" data-filter=".web">Web</p>
+            <p class="buttons-sort--button" data-filter=".digital">Digital</p>
+            <p class="buttons-sort--button" data-filter=".branding">Branding</p>
+            <p class="buttons-sort--button mr-0" data-filter=".blog">Blog</p>
+        </div>
+    </div>
+    <div class="four-column-container">
+        <div class="grid" data-grid-layout-mode="packery" data-grid-transition="0.6" data-grid-stagger="80">
+            <div class="grid--grid-item grid--grid-item-50 digital blog">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Design</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>May 22, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Alex Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>5 Best Ways to Keep Inspired</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Trip</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Nov 16, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>John Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>I can't change the rule</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 branding blog">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Digital</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Sep 8, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Mark Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>Get to know the world</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Users</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Jan 4, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Maria Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>Nothing is impossible</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Interface</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>July 1, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Sarah Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>What lies behind you</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Trip</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Nov 16, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Joe Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>I can't change the rule</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 branding application">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Features</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Dec 21, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Dustin Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>We know what we are</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-50 digital ">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Application</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>March 7, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Cory Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>Happiness is something</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding blog">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Changes</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>May 12, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Frank Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>The spirit of adventure</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 branding blog">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Interface</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>April 4, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Kate Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>All you need is the plan</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Controls</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Jan 18, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Sophie Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>5 Best Ways to Keep Inspired</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Trip</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Nov 16, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Glek Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>The spirit of adventure</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 web branding">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Digital</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Sep 8, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Michael Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>Perfection is not attainable</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-25 branding blog">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Server</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Jan 4, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>John Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>What lies behind you</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-50 digital">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Users</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>Jan 4, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Fiona Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>This is the secret of success</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid--grid-item grid--grid-item-50 digital blog">
+                <div class="blog-hover-effect-wrapper">
+                    <div class="grid-item--grid-inner">
+                        <img src="http://via.placeholder.com/1920x1280" class="img-fluid" alt="">
+                        <div class="grid-inner--post-content">
+                            <div class="post-content--tag">
+                                <span>Company</span>
+                            </div>
+                            <div class="post-content--meta">
+                                <div class="meta--date">
+                                    <p>June 16, 2019</p>
+                                </div>
+                                <div class="meta-separator"><p>|</p></div>
+                                <a href="blog-single.html" class="meta--author"><p>Jason Doe</p></a>
+                            </div>
+                            <div class="post-content--title">
+                                <a href="blog-single.html"><h5>Clouds come floating life</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

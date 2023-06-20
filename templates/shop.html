@@ -1,0 +1,355 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Shop
+{% endblock %}
+
+{% block content %}
+<header class="breadcrumbs-type-1">
+    <div class="container breadcrumbs--breadcrumbs-inner">
+        <h1 class="breadcrumbs-inner--page-title">
+            Shop
+        </h1>
+        <ul class="breadcrumbs-inner--breadcrumbs-list">
+            <li>
+                <a href="{% url 'home'%}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Shop
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- Shop -->
+<section class="shop-section small-section">
+    <div class="shop-section--shop-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 sticky-content">
+                    <div class="shop-wrapper--grid">
+                        <div class="grid--grid-item-33 product-item">
+                            <div class="product-item--image-wrapper">
+                                <a href="{% url 'product_detail'%}">
+                                    <div class="image-wrapper--image" style="background-image: url('/static/images/product/40.jpg')"></div>
+                                </a>
+                                <div class="image-wrapper--new-product">
+                                    <span class="white-background">new</span>
+                                </div>
+                                <div class="image-wrapper--products-actions">
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product-item--product-info">
+                                <h6><a href="{% url 'product_detail'%}">Light jacket</a></h6>
+                                <p class="product-info--price">
+                                    <span class="price--old-price">$200.00</span>$100.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid--grid-item-33 product-item">
+                            <div class="product-item--image-wrapper">
+                                <a href="{% url 'product_detail'%}">
+                                    <div class="image-wrapper--image" style="background-image: url('/static/images/product/39.jpg')"></div>
+                                </a>
+                                <div class="image-wrapper--products-actions">
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product-item--product-info">
+                                <h6><a href="{% url 'product_detail'%}">Leather jacket</a></h6>
+                                <p class="product-info--price">
+                                    $450.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid--grid-item-33 product-item">
+                            <div class="product-item--image-wrapper">
+                                <a href="{% url 'product_detail'%}">
+                                    <div class="image-wrapper--image" style="background-image: url('/static/images/product/37.jpg')"></div>
+                                </a>
+                                <div class="image-wrapper--new-product">
+                                    <span class="black-background">sale</span>
+                                </div>
+                                <div class="image-wrapper--products-actions">
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product-item--product-info">
+                                <h6><a href="{% url 'product_detail'%}">Denim pants</a></h6>
+                                <p class="product-info--price">
+                                    <span class="price--old-price">$125.00</span>$109.00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid--grid-item-33 product-item">
+                            <div class="product-item--image-wrapper">
+                                <a href="{% url 'product_detail'%}">
+                                    <div class="image-wrapper--image" style="background-image: url('/static/images/product/33.png')"></div>
+                                </a>
+                                <div class="image-wrapper--products-actions">
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-shopping-bag"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-heart"></i>
+                                        </a>
+                                    </div>
+                                    <div class="products-actions--action">
+                                        <a href="{% url 'product_detail'%}">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product-item--product-info">
+                                <h6><a href="{% url 'product_detail'%}">Autumn coat</a></h6>
+                                <p class="product-info--price">
+                                    $390.00
+                                </p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="shop-wrapper--shop-pagination">
+                        <ul class="shop-pagination--pagination">
+                            <li>
+                                <a href="index.html"><i class="fa fa-angle-left"></i></a>
+                            </li>
+                            <li class="pagination--active">
+                                <a href="index.html">1</a>
+                            </li>
+                            <li>
+                                <a href="index.html">2</a>
+                            </li>
+                            <li>
+                                <a href="index.html">3</a>
+                            </li>
+                            <li>
+                                <a href="index.html"><i class="fa fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 sticky-sidebar">
+                    <div class="sidebar-wrapper right-sidebar">
+                        <aside class="sidebar-wrapper--sidebar">
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Search product</h6>
+                                </div>
+                                <div class="sidebar-widget--search">
+                                    <form class="search-form">
+                                        <input type="text" placeholder="Search for...">
+                                        <button type="button">
+                                            <i class="fa fa-search double-flash"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Filter by price</h6>
+                                </div>
+                                <div class="sidebar-widget--price-filter">
+                                    <div class="price-range-block">
+                                        <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                                        <div class="d-flex justify-content-between">
+                                            <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field"/>
+                                            <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field"/>
+                                            <button type="submit" href="#">Filter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Popular products</h6>
+                                </div>
+                                <ul class="sidebar-widget--post-list">
+                                    <li class="post-list--post">
+                                        <a href="{% url 'product_detail'%}">
+                                            <div class="post--img-wrapper">
+                                                <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <div class="post--post-body">
+                                            <h6 class="post-body--post-title"><a href="index.html">IHiegger Phone</a></h6>
+                                            <p class="product-info--price">
+                                                <span class="price--old-price">$309.00</span>$199.00
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="post-list--post">
+                                        <a href="{% url 'product_detail'%}">
+                                            <div class="post--img-wrapper">
+                                                <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <div class="post--post-body">
+                                            <h6 class="post-body--post-title"><a href="index.html">Headphones</a></h6>
+                                            <p class="product-info--price">
+                                                $149.00
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="post-list--post">
+                                        <a href="{% url 'product_detail'%}">
+                                            <div class="post--img-wrapper">
+                                                <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <div class="post--post-body">
+                                            <h6 class="post-body--post-title"><a href="index.html">Brown watch</a></h6>
+                                            <p class="product-info--price">
+                                                $699.00
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Product tags</h6>
+                                </div>
+                                <ul class="sidebar-widget--categories">
+                                    <li>
+                                        <a href="index.html">Fashion</a>
+                                        <p>25</p>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Summer</a>
+                                        <p>32</p>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Cotton</a>
+                                        <p>47</p>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Hipster</a>
+                                        <p>60</p>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Standard</a>
+                                        <p>48</p>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">Leather</a>
+                                        <p>28</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Spot for banner</h6>
+                                </div>
+                                <div class="sidebar-widget--banner" style="background-image: url('http://via.placeholder.com/1920x1280')">
+                                </div>
+                            </div>
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Dribble</h6>
+                                </div>
+                                <div class="sidebar-widget--dribble-widget">
+                                    <a href="https://dribbble.com/" class="gallery--image-item">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="https://dribbble.com/" class="gallery--image-item">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="https://dribbble.com/" class="gallery--image-item">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="https://dribbble.com/" class="gallery--image-item">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="https://dribbble.com/" class="gallery--image-item">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="https://dribbble.com/" class="gallery--image-item">
+                                        <img src="http://via.placeholder.com/1920x1280" alt="" class="img-fluid">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sidebar--sidebar-widget">
+                                <div class="sidebar-widget--widget-title">
+                                    <h6 class="title">Follow us</h6>
+                                </div>
+                                <div class="sidebar-widget--socials">
+                                    <ul class="social-icons-type-3">
+                                        <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-google"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
